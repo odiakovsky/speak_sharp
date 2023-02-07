@@ -1,1 +1,54 @@
 @import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Montserrat:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1246px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/*Header*/
+.header {
+    padding-top: 30px;
+    background-color: #F1F1F1;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* Logo */
+
+.logo {
+    align-items: flex-end;
+}
+
+.logo-name {
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 40px;
+    color: #22150B;
+}
+
+/* Nav */
+
+.nav-list {
+    display: flex;
+    column-gap: 50px;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.nav-item {
+
+}
+
+.nav-link {
+    color: #22150B;
+}
