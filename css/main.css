@@ -1,10 +1,10 @@
 @import "./reset.css";
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Montserrat+Alternates:wght@400;700&family=Montserrat:wght@400;700&display=swap');
 
 body {
-    font-family: 'Mochiy Pop One', sans-serif;
+    font-family: 'Aclonica', sans-serif;
     font-family: 'Montserrat', sans-serif;
-}
+    font-family: 'Montserrat Alternates', sans-serif;}
 
 .container {
     max-width: 1246px;
@@ -31,7 +31,7 @@ body {
 }
 
 .logo-name {
-    font-family: 'Mochiy Pop One', sans-serif;
+    font-family: 'Aclonica', sans-serif;
     font-size: 40px;
     color: #22150B;
 }
@@ -46,9 +46,17 @@ body {
 }
 
 .nav-item {
-
+    display: inline-block;
+    vertical-align: auto;
+    
 }
 
 .nav-link {
     color: #22150B;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 700;
+}
+
+.language {
+    
 }
