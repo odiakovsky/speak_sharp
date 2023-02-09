@@ -57,6 +57,25 @@ body {
     font-weight: 700;
 }
 
-.language {
-    
+/*Header Content*/
+
+.header-row {
+    /*display: flex;
+    justify-content:space-between;*/
+    position: relative;
+    padding-top: 30px;
+}
+
+.header-content {
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    color:aliceblue
+       
+}
+.header-heading {
+    /*padding-top: 100px;
+    padding-left: 100px;*/
+    font-weight: 700;
+    font-size: 70px;
 }
