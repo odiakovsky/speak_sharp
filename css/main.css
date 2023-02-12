@@ -60,22 +60,26 @@ body {
 /*Header Content*/
 
 .header-row {
-    /*display: flex;
-    justify-content:space-between;*/
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-top: 30px;
-}
-
-.header-content {
+  }
+  
+  .header-img {
+    width: 100%;
+  }
+  
+  .header-content {
     position: absolute;
-    top: 60px;
-    left: 50px;
-    color:aliceblue
-       
-}
+    top: 10%;
+    left: 10%;
+    transform: translate(-20%, -10%);
+    color: white;
+    padding: 20px;  }
+
 .header-heading {
-    /*padding-top: 100px;
-    padding-left: 100px;*/
     font-weight: 700;
-    font-size: 70px;
+    font-size: 64px;
 }
