@@ -80,6 +80,47 @@ body {
     padding: 20px;  }
 
 .header-heading {
+    margin-left: 30px;
+    max-width: 600px;
     font-weight: 700;
     font-size: 64px;
+}
+
+.header-button {
+    position: absolute;
+    top: 85%;
+    left: 5%;
+
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 5px 20px;
+    background: linear-gradient(to right, #D74200, #FF9000, #FF6900);
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px 0 #FFFFFF;
+
+    font-size: 32px;
+    font-weight: 700;
+    color: #21140B;
+
+    transition: linear-gradient 1s ease-in, top 0.5s ease-in;
+}
+
+.btn:hover, .btn:focus {
+    background: linear-gradient(to right, #FF9000, #FF6900, #FF9000);
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
+    background: linear-gradient(to right, #D74200, #FF9000, #FF6900);
+}
+
+.button-apps {
+    display: flex;
+    justify-content:end;
+    column-gap: 20px;
+    padding-top: 20px;
 }
