@@ -16,10 +16,16 @@
             <!-- Header Nav -->
             <div class="header-nav">
                 <div class="logo">
-                    <img src="/img/Parrot.svg" alt="SpeakSharp" href="https://speaksharp.ru/">
+
+                    <picture>
+                        <source media="(max-width: 799px)" srcset="/img/Parrot20.svg">
+                        <img src="/img/Parrot35.svg" alt="SpeakSharp" href="https://speaksharp.ru/">
+                    </picture>
+
                     <span class="logo-name"><a href="https://speaksharp.ru/" class="logo-name">SPEAK SHARP</a></span>
+
                 </div>
-                <nav class="nav">
+                <nav id="nav" class="nav">
                     <ul class="nav-list">
                         <li class="nav-item"><a href="#!" class="nav-link">Идея</a></li>
                         <li class="nav-item"><a href="#!" class="nav-link">Контакты</a></li>
@@ -29,6 +35,9 @@
                         </div>
                         <li class="nav-item"><img src="/img/Login.svg" alt="login" href="#!"></li>
                     </ul>
+                    <button id="nav-btn" class="nav-button">
+                        <img id="nav-btn-img" src="/img/burger.svg" alt="Nav button">
+                    </button>
                 </nav>
             </div>
 
@@ -40,7 +49,13 @@
                     </div>
 
                 <div class="header-img">
-                    <img src="/img/back_big.png" alt="img">
+
+                    <picture>
+                        
+                        <source media="(max-width: 799px)" srcset="/img/back_small.png">
+                        <img src="/img/back_big.png" alt="img">
+                    </picture>
+
                 </div>
 
                 <div class="header-button">
@@ -53,8 +68,21 @@
 
             <div class="container">
                 <div class="button-apps">
-                    <a href="#!"><img src="/img/Apple.png" alt="apple"></a>
-                    <a href="#!"><img src="/img/Google.png" alt="google"></a>
+
+                    <picture>
+
+                        <source media="(max-width: 799px)" srcset="/img/Apple_mobile.png">
+
+                        <a href="#!"><img src="/img/Apple.png" alt="apple"></a>
+
+                    </picture>
+
+                    <picture>
+                        <source media="(max-width: 799px)" srcset="/img/Google_mobile.png">
+                        <a href="#!"><img src="/img/Google.png" alt="google"></a>
+                    </picture>
+
+                    
                 </div>
             </div>
 

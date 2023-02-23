@@ -45,6 +45,10 @@ body {
     font-size: 32px;
 }
 
+.nav-button {
+    display: none;
+}
+
 .nav-item {
     display: inline-block;
     vertical-align: auto;
