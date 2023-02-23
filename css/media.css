@@ -41,21 +41,27 @@
 
 @media (max-width: 799px) {
 
-    .logo {
+    .header-nav {
         display: flex;
-        justify-content: center;
+        justify-content:space-between;
+        align-items:baseline;
+    }    
+
+    .logo {
+        display: block;
+        justify-content:baseline;
         align-items: center;
+        vertical-align: auto;
     }
     
 
     .logo-name {
-        font-size: 18px;
-        margin-left: 2px;
+        font-size: 22px;
     }
     
 
     .header-content {
-        top: 7%;
+        top: 5%;
         justify-content: center;
         display: flex;
         align-items: center;
@@ -65,8 +71,13 @@
     .header-heading {
         font-size: 26px;
         max-width: 289px;
-        margin-left: 10px;
+        margin-left: 15px;
 
     }
+
+    .header-row {
+        padding-top: 10px;
+      }
+    
 
 }
