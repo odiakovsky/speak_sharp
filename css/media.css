@@ -78,6 +78,13 @@
     .header-row {
         padding-top: 10px;
       }
+
+    .nav-button {
+        position: fixed;
+        top: 35px;
+        right: 30px;
+    }
+
     
 
 }
