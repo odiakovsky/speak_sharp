@@ -5,12 +5,21 @@ body {
     font-family: 'Aclonica', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Montserrat Alternates', sans-serif;
-    background-color: #F1F1F1;}
+    background-color: #F1F1F1;
+}
+
+hr {
+    width: 1035px;
+    height: 1px;
+    background-color: black;
+    border: none;
+}
 
 .header {
     max-width: 1065px;
     padding: 30px 15px;
     margin: 0 auto;
+
 }
 
 
@@ -31,6 +40,8 @@ body {
     font-family: 'Aclonica';
     font-size: 40px;
     font-weight: 400;
+    color: black;
+    text-decoration: none;
 
 }
 
@@ -38,7 +49,13 @@ body {
     font-family: 'Montserrat Alternates';
     font-size: 24px;
     font-weight: 400;
- 
+    color: black;
+  text-decoration: none;
+
+}
+
+.nav-link {
+    color: black;
 }
 
 .language {
@@ -76,3 +93,77 @@ body {
 
 }
 
+/* Basic Content */
+
+.basic {
+    max-width: 1065px;
+    padding: 30px 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.column {
+    max-width: 350px;
+    font-size: 18px;
+}
+
+.text1 {
+    text-align: center;
+    margin: 15px;
+}
+
+.text2 {
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid #A0522D;
+    padding: 20px;
+    margin: 15px;
+}
+
+.text3 {
+    text-align: center;
+    margin: 15px;
+}
+
+/* Footer */
+
+.footer {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer>* {
+    margin-bottom: 20px;
+    /* добавляем отступ между дочерними элементами */
+}
+
+.socials {
+    margin-top: 40px;
+}
+
+.socials img:first-child {
+    margin-right: 45px;
+}
+
+.phone {
+    font-family: 'Montserrat Alternates';
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.email {
+    font-family: 'Montserrat Alternates';
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.shops img:first-child {
+    margin-right: 25px;
+}
