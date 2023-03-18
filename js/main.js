@@ -41,3 +41,41 @@ function draw() {
 
 // Start the animation loop
 draw();
+
+
+// выбираем элементы, с которыми будем работать
+const container = document.querySelector('.container');
+const card1 = document.querySelector('.card1');
+const card2 = document.querySelector('.card2');
+const card3 = document.querySelector('.card3');
+
+// устанавливаем начальные значения opacity
+card1.style.opacity = '1';
+card2.style.opacity = '0';
+card3.style.opacity = '0';
+
+let counter = 0; // счетчик нажатий
+
+container.addEventListener('click', () => {
+  container.style.opacity = '0'; // меняем opacity на 0 при клике
+  setTimeout(() => {
+    container.style.opacity = '1'; // через 5 секунд меняем opacity на 1
+    counter++; // увеличиваем счетчик нажатий
+
+    // изменяем opacity у нужных элементов в зависимости от счетчика
+    if (counter === 1) {
+      card1.style.opacity = '0';
+      card2.style.opacity = '1';
+      card3.style.opacity = '0';
+    } else if (counter === 2) {
+      card1.style.opacity = '0';
+      card2.style.opacity = '0';
+      card3.style.opacity = '1';
+    } else if (counter === 3) {
+      card1.style.opacity = '1';
+      card2.style.opacity = '0';
+      card3.style.opacity = '0';
+      counter = 0; // обнуляем счетчик, если было три нажатия
+    }
+  }, 3000);
+});
