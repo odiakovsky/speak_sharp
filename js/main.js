@@ -79,3 +79,44 @@ container.addEventListener('click', () => {
     }
   }, 3000);
 });
+
+
+//Прокрутка к самому низу
+
+function scrollToBottom() {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth'
+    });
+  }
+
+
+// Прокрутка к таблице
+
+function scrollToElement() {
+    var element = document.getElementById("scroll-to-element");
+    element.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+  
+// Находим ссылку с классом "nav-link" и текстом "Идея"
+const ideaLink = document.querySelector('.nav-link[href="#!"][innerText="Идея"]');
+
+// Находим объект table
+const tableElement = document.querySelector('.table');
+
+// Добавляем обработчик события клика на ссылку
+ideaLink.addEventListener('click', () => {
+  // Вычисляем координаты объекта table относительно верхней границы документа
+  const tableTop = tableElement.getBoundingClientRect().top + window.pageYOffset;
+
+  // Вычисляем положение экрана, которое необходимо установить для того, чтобы объект table оказался по центру страницы
+  const targetScrollY = tableTop - window.innerHeight / 2 + tableElement.offsetHeight / 2;
+
+  // Анимированно прокручиваем экран до нужного положения
+  window.scrollTo({
+    top: targetScrollY,
+    behavior: 'smooth'
+  });
+});
+
+  
