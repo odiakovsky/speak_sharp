@@ -90,7 +90,7 @@ hr {
     justify-content: center;
     z-index: 2;
     transform: translateY(-90%);
-    
+
 }
 
 .btn img {
@@ -160,9 +160,28 @@ hr {
     margin-top: 40px;
 }
 
-.socials img:first-child {
-    margin-right: 45px;
+.socials a:first-child {
+    margin-right: 50px;
 }
+
+.socials img {
+    background-image: url('button.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 60px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.2s;
+}
+
+.socials img:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.socials img:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
 
 .phone {
     font-family: 'Montserrat Alternates';
@@ -179,6 +198,25 @@ hr {
 .shops img:first-child {
     margin-right: 25px;
 }
+
+.shops img {
+    background-image: url('button.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 60px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.2s;
+}
+
+.shops img:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.shops img:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
 
 
 .win {
