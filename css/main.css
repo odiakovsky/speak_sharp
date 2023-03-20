@@ -23,10 +23,11 @@ hr {
 }
 
 
-.nav-list {
+.menu {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    gap: 5px;
 }
 
 .logo {
@@ -34,6 +35,8 @@ hr {
     justify-content: space-between;
     column-gap: 10px;
     align-items: flex-end;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 .logo-name {
@@ -63,6 +66,10 @@ hr {
     justify-content: space-between;
     column-gap: 10px;
     align-items: center;
+}
+
+.burger {
+    display: none;
 }
 
 .header-head {

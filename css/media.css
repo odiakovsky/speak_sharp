@@ -1,0 +1,155 @@
+/*@media screen and (orientation: portrait) {*/
+/* Применяем стили из media.css только на устройствах с высотой больше ширины */
+
+@media (max-width: 900px) {
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
+        align-items: flex-end;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+
+    .logo-name {
+        font-family: 'Aclonica';
+        font-size: 30px;
+        font-weight: 400;
+        color: black;
+        text-decoration: none;
+
+    }
+
+    .logo-img {
+        height: 35px;
+    }
+
+    .flag {
+        height: 35px;
+        padding-left: 250px;
+    }
+
+    .nav-item {
+        display: none;
+
+    }
+
+    .burger {
+        align-items: center;
+        height: 20px;
+        display: block;
+    }
+
+    .parrot {
+        width: 300px;
+    }
+
+    .girl {
+        width: 300px;
+    }
+
+    .column {
+        max-width: 260px;
+        font-size: 14px;
+    }
+
+
+    .win {
+        max-width: 250px;
+        max-height: 125px;
+        font-size: 12px;
+    }
+
+    .container {
+        opacity: 1;
+        position: absolute;
+        bottom: 0;
+        width: 248px;
+        height: 63px;
+        border-radius: 0px 0px 15px 15px;
+        background-color: #f2f2f2;
+
+    }
+
+
+    .text1 {
+        text-align: center;
+        margin: 15px;
+    }
+
+    .text2 {
+        background-color: white;
+        border-radius: 10px;
+        border: 2px solid #A0522D;
+        padding: 20px;
+        margin: 15px;
+    }
+
+    .text3 {
+        text-align: center;
+        margin: 15px;
+    }
+
+    .card1 {
+        font-size: 14px;
+    }
+
+    .card2 {
+        font-size: 14px;
+    }
+
+    .card3 {
+        font-size: 14px;
+    }
+
+    .rus-card1 {
+        width: 100%;
+        margin: 20px 0;
+    
+    }
+    
+    .eng-card1 {
+        opacity: 1;
+        margin: 20px 0;
+        width: 100%;
+    }
+    
+    .rus-card2 {
+        margin: 20px 0;
+        width: 100%;
+    }
+    
+    .eng-card2 {
+        opacity: 1;
+        margin: 20px 0;
+        width: 100%;
+    }
+    
+    .rus-card3 {
+        margin: 20px 0;
+        width: 100%;
+    
+    
+    }
+    
+    .eng-card3 {
+        opacity: 1;
+        margin: 20px 0;
+        width: 100%;
+    
+    }
+    
+
+}
+
+@media (max-width: 790px) {
+    
+}
