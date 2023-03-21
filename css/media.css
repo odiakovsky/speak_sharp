@@ -150,7 +150,7 @@
 
 }
 
-@media (max-width: 790px) {
+@media (max-width: 790px) and (orientation: portrait){
 
     .logo {
         display: flex;
