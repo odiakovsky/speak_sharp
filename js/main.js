@@ -119,4 +119,18 @@ ideaLink.addEventListener('click', () => {
   });
 });
 
+function showKaz() {
+    document.getElementById("kaz").style.display = "flex";
+  }
+  
+  function hideKaz() {
+    var kaz = document.getElementById("kaz");
+    var relatedTarget = event.relatedTarget;
+    setTimeout(function() {
+      if (!kaz.contains(relatedTarget)) {
+        kaz.style.display = "none";
+      }
+    }, 3000);
+  }
+  
   

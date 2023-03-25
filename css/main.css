@@ -36,6 +36,8 @@ hr {
     justify-content: space-between;
     align-items: flex-end;
     gap: 50px;
+    position: relative;
+    /* Добавляем относительное позиционирование для контейнера меню */
 }
 
 .logo {
@@ -73,12 +75,28 @@ hr {
     justify-content: space-between;
     column-gap: 10px;
     align-items: center;
+    position: relative;
+    /* добавлено свойство position */
 }
+
+.kaz {
+    display: none;
+    justify-content: space-between;
+    column-gap: 10px;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    z-index: 1;
+}
+
+
+
 
 .flagburger {
     display: flex;
     justify-content: space-between;
     gap: 40px;
+    position: relative;
 }
 
 .burger {
@@ -139,8 +157,8 @@ hr {
     column-gap: 15px;
 }
 
-.table {
-}
+.table {}
+
 .column {
     max-width: 670px;
     width: 350px;
@@ -358,6 +376,3 @@ hr {
     transform: translateY(1px);
     box-shadow: none;
 }
-
-
-
