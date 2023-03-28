@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train page</title>
+    <link rel="stylesheet" href="/css/train.css">
+</head>
+<body>
+	<header>
+		<!-- здесь может быть шапка сайта -->
+	</header>
+	<main>
+		<template id="train">
+            <div class="container">
+              <h2>ТРЕНИРОВКА</h2>
+              <div class="telo">
+                <div class="card">
+                    <h3>Простое время <br><b>The simple tenses</b></h3>
+                    <h4>1 уровень</h4>
+                    <img src="/img/book.svg" alt="book">
+                </div>
+              </div>
+            </div>
+          </template>
+	</main>
+	<footer>
+		<!-- здесь может быть подвал сайта -->
+	</footer>
+	<script>
+		// клонируем компонент из шаблона
+		const template = document.querySelector('#train');
+		const component = template.content.cloneNode(true);
+
+		// добавляем компонент на страницу
+		const main = document.querySelector('main');
+		main.appendChild(component);
+	</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Montserrat+Alternates:wght@200;400;700&family=Montserrat:wght@200;400;700&display=swap');
+@import "./normalize.css";
+
+
+.container {
+    font-family: 'Aclonica', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+    max-width: 200px;
+    padding: 20px;
+}
+
+h2 {
+    border: 3px solid;
+    border-radius: 20px 20px 5px 5px;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 32px 7px 32px;
+    color: #8E2A15;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.telo {
+    width: 100%;
+    max-height: 548px;
+    background: linear-gradient(135deg, #8E2A15 0%, #DC5B25 49.48%, #8E2A15 100%);
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.card {
+    
+    background: #FAFAFA;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin: 0 10px 10px 10px;
+}
+
+h3 {
+    font-size: 13px;
+    font-family: 'Montserrat Alternates';
+    font-weight: 400;
+    margin: 10px 10px auto;
+}

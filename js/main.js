@@ -133,4 +133,22 @@ function showKaz() {
     }, 3000);
   }
   
-  
+
+
+let flagKazVisible = false;
+let flagKazTimeout;
+
+language.addEventListener("click", function() {
+  if (flagKazVisible) {
+    flagKaz.style.display = "none";
+    flagKazVisible = false;
+    clearTimeout(flagKazTimeout);
+  } else {
+    flagKaz.style.display = "block";
+    flagKazVisible = true;
+    flagKazTimeout = setTimeout(function() {
+      flagKaz.style.display = "none";
+      flagKazVisible = false;
+    }, 1000);
+  }
+});

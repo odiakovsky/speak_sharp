@@ -1,4 +1,4 @@
-@import "./reset.css";
+@import "./normalize.css";
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Montserrat+Alternates:wght@200;400;700&family=Montserrat:wght@200;400;700&display=swap');
 
 body {
@@ -88,9 +88,6 @@ hr {
     left: 0;
     z-index: 1;
 }
-
-
-
 
 .flagburger {
     display: flex;
