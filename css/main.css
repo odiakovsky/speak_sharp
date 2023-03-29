@@ -1,4 +1,4 @@
-@import "./normalize.css";
+@import "./reset.css";
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Montserrat+Alternates:wght@200;400;700&family=Montserrat:wght@200;400;700&display=swap');
 
 body {
@@ -124,9 +124,10 @@ hr {
     position: relative;
     display: flex;
     justify-content: center;
-    z-index: 2;
-    transform: translateY(-90%);
-
+    z-index: 1;
+    text-align: center;
+    /*transform: translateY(100%);
+    transform: translateX(25%);*/
 }
 
 .btn img {
