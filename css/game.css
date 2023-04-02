@@ -1,0 +1,8 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Montserrat+Alternates:wght@200;400;700&family=Montserrat:wght@200;400;700&display=swap');
+
+.train {
+    width: 100%;
+    border: none;
+    scrollbar-width: 0px;
+}

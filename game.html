@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game</title>
+  <meta charset="UTF-8">
+  <link rel="import" href="train2.html">
+
+</head>
+<body>
+  <h1>Hello</h1>
+  <script>
+    var link = document.querySelector('link[rel=import]');
+var content = link.import.querySelector('#train');
+document.body.appendChild(content.cloneNode(true));
+  </script>
+</body>
+</html>
