@@ -48,8 +48,8 @@ h2 {
 .telo::-webkit-scrollbar {
     width: 0px;
     background-color: #F5F5F5;
-    }
-    
+}
+
 
 .card {
     width: 90%;
@@ -61,7 +61,16 @@ h2 {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
 }
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
 
 h3 {
     font-size: 13px;
@@ -76,9 +85,9 @@ h3 {
     width: 25px;
     position: relative;
     margin-top: auto;
-margin-left: auto;
-transform: translate(-20%, -20%);
-    
+    margin-left: auto;
+    transform: translate(-20%, -20%);
+
 }
 
 h4 {

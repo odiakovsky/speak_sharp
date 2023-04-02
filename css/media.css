@@ -7,70 +7,6 @@
 
     }
 
-    .menu {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1px
-    }
-
-    .nav-item {
-        display: none;
-    }
-
-    .flagburger {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 5px;
-        width: 25%;
-
-    }
-
-    .logo {
-        display: flex;
-        justify-content: flex-start;
-        column-gap: 6px;
-        align-items: flex-end;
-        margin-left: 10px;
-        margin-right: 10px;
-        width: 75%;
-
-    }
-
-
-    .logo-name {
-        font-family: 'Aclonica';
-        font-size: 40px;
-        font-weight: 400;
-        color: black;
-        text-decoration: none;
-
-    }
-
-    .logo-img {
-        height: 46px;
-    }
-
-    .language {
-        justify-content: flex-end;
-        width: 60px;
-    }
-
-    .flag {
-        height: 60px;
-        padding-left: 1px;
-    }
-
-    .burger {
-        align-items: center;
-        height: 40px;
-        display: block;
-        margin-left: 20px;
-        padding-right: 30px;
-
-    }
 
     .header-head {
         font-family: 'Montserrat Alternates';
@@ -248,7 +184,7 @@
         display: none;
     }
 
-    .flagburger {
+    .language {
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -282,12 +218,12 @@
         height: 25px;
     }
 
-    .language {
+    .rus {
         justify-content: flex-end;
         width: 25px;
     }
 
-    .language:hover + .kaz {
+    .rus:hover + .kaz {
         display: flex;
     }    
 

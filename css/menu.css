@@ -1,0 +1,199 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Montserrat+Alternates:wght@200;400;700&family=Montserrat:wght@200;400;700&display=swap');
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 50px;
+    position: relative;
+    /* Добавляем относительное позиционирование для контейнера меню */
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    align-items: flex-end;
+    margin: 0 auto;
+}
+
+.logo-name {
+    font-family: 'Aclonica';
+    font-size: 40px;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+
+}
+
+.nav-item {
+    font-family: 'Montserrat Alternates';
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+
+}
+
+.nav-link {
+    color: black;
+}
+
+.rus {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    align-items: center;
+    position: relative;
+}
+
+.kaz {
+    display: none;
+    justify-content: space-between;
+    column-gap: 10px;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    z-index: 1;
+}
+
+.language {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    position: relative;
+}
+
+.burger {
+    display: none;
+}
+
+
+@media (max-width: 1024px) {
+
+    .menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1px
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 6px;
+        align-items: flex-end;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 75%;
+
+    }
+
+
+    .logo-name {
+        font-family: 'Aclonica';
+        font-size: 40px;
+        font-weight: 400;
+        color: black;
+        text-decoration: none;
+
+    }
+
+    .logo-img {
+        height: 46px;
+    }
+
+    .rus {
+        justifagy-content: flex-end;
+        width: 60px;
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+        position: relative;
+    
+    }
+
+    .flag {
+        height: 60px;
+        padding-left: 1px;
+    }
+
+    .burger {
+        align-items: center;
+        height: 40px;
+        display: block;
+        margin-left: 20px;
+        padding-right: 30px;
+
+    }
+
+
+@media (max-width: 740px) {
+
+    .menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1px
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 6px;
+        align-items: flex-end;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 75%;
+
+    }
+
+
+    .logo-name {
+        font-family: 'Aclonica';
+        font-size: 18px;
+        font-weight: 400;
+        color: black;
+        text-decoration: none;
+
+    }
+
+    .logo-img {
+        height: 25px;
+    }
+
+    .rus {
+        justify-content: flex-end;
+        width: 25px;
+    }
+
+    .rus:hover + .kaz {
+        display: flex;
+    }    
+
+    .flag {
+        height: 25px;
+        padding-left: 1px;
+    }
+
+    .burger {
+        align-items: center;
+        height: 16px;
+        display: block;
+        margin-left: 10px;
+
+    }
+}
+}
