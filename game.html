@@ -5,54 +5,101 @@
     <title>Speak Sharp Game</title>
     <meta charset="UTF-8">
 
+    <link rel="stylesheet" href="./css/game.css">
     <link rel="stylesheet" href="./css/train.css">
+    <link rel="stylesheet" href="./css/menu.css">
+
 
 
 </head>
 
 <body>
 
-    <!-- Выбор тренировки. Стили прописаны в train.css -->
-    <div id="train">
-        <div class="container">
-            <h2>ТРЕНИРОВКА</h2>
+    <!-- Меню -->
+    <div class="menu">
+        <h2 class="nav-item"><a href="#!" class="nav-link" onclick="scrollToElement()">Идея</a></h2>
+        <h2 class="nav-item"><a href="#!" class="nav-link" onclick="scrollToBottom()">Контакты</a></h2>
+
+        <div class="logo">
+            <picture>
+                <img src="/img/parrot50.svg" class='logo-img' alt="SpeakSharp" href="https://speaksharp.ru/">
+            </picture>
+            <h1 class="logo-name"><a href="https://speaksharp.ru/" class="nav-link">SPEAK SHARP</a></h1>
+
+        </div>
+
+        <div class="language">
+            <div class="rus" onmouseover="showKaz();" onmouseout="hideKaz();">
+                <h2 class="nav-item"><a href="#!" class="nav-link">РУС</a></h2>
+                <img src="/img/russia40.svg" class="flag" id="flag-rus" alt="language" href="#!">
+            </div>
+
+            <div class="kaz" id="kaz">
+                <h2 class="nav-item"><a href="#!" class="nav-link">ҚАЗ</a></h2>
+                <img src="/img/kaz.png" class="flag" alt="language" href="#!">
+            </div>
+        </div>
+
+        <img src="/img/Login.svg" class="nav-item" alt="login" href="#!">
+        <img src="/img/burger.svg" class="burger" alt="burger" href="#!">
+    </div>
+    <!-- Меню -->
+
+
+
+    <div class="main">
+
+        <div class="ad1"></div>
+
+
+
+        <!-- Выбор тренировки. Стили прописаны в train.css -->
+        <div id="train">
+            <h3 class="header-train">ТРЕНИРОВКА</h3>
             <div class="telo">
                 <div class="card selected">
-                    <h3>Простое время <br><b>The simple tenses</b></h3>
-                    <h4>1 уровень</h4>
+                    <h4>Простое время <br><b>The simple tenses</b>
+                    </h4>
+                    <h5>1 уровень</h5>
                     <img src="/img/book.svg" class="book" alt="book">
                 </div>
                 <div class="card">
-                    <h3>Простое время <br><b>The simple tenses</b></h3>
-                    <h4>2 уровень</h4>
+                    <h4>Простое время <br><b>The simple tenses</b></h4>
+                    <h5>2 уровень
+                    </h5>
                     <img src="/img/book.svg" class="book" alt="book">
                 </div>
                 <div class="card">
-                    <h3>Глагол <b>to be</b> <br>(быть, находиться)</b></h3>
+                    <h4>Глагол <b>to be</b> <br>(быть, находиться)</b></h4>
                     <img src="/img/book.svg" class="book" alt="book">
                 </div>
                 <div class="card notactive">
-                    <h3>Продолженное время <br><b>Continuous Tenses</b></h3>
+                    <h4>Продолженное время <br><b>Continuous Tenses</b></h4>
                     <img src="/img/book.svg" class="book" alt="book">
                 </div>
                 <div class="card notactive">
-                    <h3>Совершенное время <br><b>The Perfect Tenses</b></h3>
+                    <h4>Совершенное время <br><b>The Perfect Tenses</b></h4>
                     <img src="/img/book.svg" class="book" alt="book">
                 </div>
                 <div class="card notactive">
-                    <h3>Совершенное время <br><b>The Perfect Tenses</b></h3>
+                    <h4>Совершенное время <br><b>The Perfect Tenses</b></h4>
                     <img src="/img/book.svg" class="book" alt="book">
                 </div>
                 <div class="card notactive">
-                    <h3>Совершенное время <br><b>The Perfect Tenses</b></h3>
+                    <h4>Совершенное время <br><b>The Perfect Tenses</b></h4>
                     <img src="/img/book.svg" class="book" alt="book">
                 </div>
             </div>
         </div>
+        <!-- Выбор тренировки -->
+
+        <div class="gameplay"></div>
+
+        <div class="dictionary"></div>
+
+        <div class="ad2"></div>
+
     </div>
-    <!-- Выбор тренировки -->
-
-
 
     <script src="./js/train.js"></script>
 

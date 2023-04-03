@@ -1,19 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Montserrat+Alternates:wght@200;400;700&family=Montserrat:wght@200;400;700&display=swap');
 @import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Montserrat+Alternates:wght@200;400;700&family=Montserrat:wght@200;400;700&display=swap');
 
 
 
-.container {
-    font-family: 'Aclonica', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Montserrat Alternates', sans-serif;
-    max-width: 210px;
-    width: 100%;
-
-}
-
-
-h2 {
+.header-train {
     width: 100%;
     background: #FAFAFA;
     border: 3px solid #8E2A15;
@@ -102,7 +92,7 @@ h2 {
   }
 
 
-h3 {
+h4 {
     font-size: 13px;
     font-family: 'Montserrat Alternates';
     font-weight: 400;
@@ -120,7 +110,7 @@ h3 {
 
 }
 
-h4 {
+h5 {
     font-size: 12px;
     font-family: 'Montserrat';
     font-weight: 600;
