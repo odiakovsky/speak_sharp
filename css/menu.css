@@ -7,7 +7,10 @@
     align-items: flex-end;
     gap: 50px;
     position: relative;
-    /* Добавляем относительное позиционирование для контейнера меню */
+    width: 100%;
+    max-width: 1280px;
+    padding: 30px 15px;
+
 }
 
 .logo {

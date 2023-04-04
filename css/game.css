@@ -15,6 +15,7 @@ body {
     align-items: center;
 }
 
+
 .main {
     max-width: 1920px;
     width: 100%;
@@ -29,11 +30,6 @@ body {
 }
 
 .ad1 {
-    max-width: 180px;
-    width: 100%;
-    border: 3px solid #8E2A15;
-    height: 595px;
-    
 
 }
 
@@ -47,9 +43,11 @@ body {
 .gameplay {
     max-width: 394px;
     width: 100%;
-    border: 3px solid #8E2A15;
-    height: 595px;
-
+    height: 548px;
+    background: #FAFAFA;
+    border: 3px solid #E35A00;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
 }
 
 .dictionary {
@@ -61,9 +59,5 @@ body {
 }
 
 .ad2 {
-    max-width: 180px;
-    width: 100%;
-    border: 3px solid #8E2A15;
-    height: 595px;
 
 }
