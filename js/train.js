@@ -1,3 +1,5 @@
+//Выбор тренеровки
+
 const cards = document.querySelectorAll('.card');
 
 cards.forEach(card => {
@@ -16,4 +18,16 @@ cards.forEach(card => {
     cards.forEach(c => c.classList.remove('selected'));
     card.classList.add('selected');
   });
+});
+
+//Выбор тренеровки
+
+
+const phrase = document.querySelector(".translation-phrase");
+const mute = document.querySelector(".mute");
+const h2 = document.querySelector(".translation-phrase h2");
+
+phrase.addEventListener("click", () => {
+  mute.style.display = "none";
+  h2.style.display = "block";
 });

@@ -1,11 +1,12 @@
+// Летающие точки Mute
+
 const canvas = document.getElementById("myCanvas");
 const ctx = canvas.getContext("2d");
 
-// Set canvas dimensions
 canvas.width = canvas.offsetWidth;
 canvas.height = canvas.offsetHeight;
 
-// Create an array of 100 random points within the rectangle
+// Create an array of 5000 random points within the rectangle
 let points = [];
 for (let i = 0; i < 5000; i++) {
     points.push({
@@ -42,6 +43,10 @@ function draw() {
 // Start the animation loop
 draw();
 
+// Летающие точки Mute
+
+
+//Смена карточек с тремя фразами
 
 // выбираем элементы, с которыми будем работать
 const container = document.querySelector('.container');
@@ -80,15 +85,18 @@ container.addEventListener('click', () => {
   }, 3000);
 });
 
+//Смена карточек с тремя фразами
+
+
 
 //Прокрутка к самому низу
-
 function scrollToBottom() {
     window.scrollTo({
       top: document.body.scrollHeight,
       behavior: 'smooth'
     });
   }
+//Прокрутка к самому низу
 
 
 // Прокрутка к таблице
@@ -119,6 +127,11 @@ ideaLink.addEventListener('click', () => {
   });
 });
 
+// Прокрутка к таблице
+
+
+//Выбор языка
+
 function showKaz() {
     document.getElementById("kaz").style.display = "flex";
   }
@@ -133,8 +146,6 @@ function showKaz() {
     }, 3000);
   }
   
-
-
 let flagKazVisible = false;
 let flagKazTimeout;
 
@@ -152,3 +163,6 @@ language.addEventListener("click", function() {
     }, 1000);
   }
 });
+
+//Выбор языка
+

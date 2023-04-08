@@ -41,6 +41,9 @@ body {
 }
 
 .gameplay {
+    display: flex;
+    align-items: center;  
+    flex-direction: column;
     max-width: 394px;
     width: 100%;
     height: 548px;
