@@ -44,9 +44,9 @@ body {
     display: flex;
     align-items: center;  
     flex-direction: column;
-    max-width: 394px;
+    max-width: 400px;
     width: 100%;
-    height: 548px;
+    height: 66vh;
     background: #FAFAFA;
     border: 3px solid #E35A00;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);

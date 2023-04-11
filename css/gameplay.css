@@ -150,6 +150,9 @@ img[alt="f"] {
   margin: 8px auto;
 }
 
+
+/* Свитч авторежима */
+
 /* The switch - the box around the slider */
 .switch {
   position: relative;
@@ -192,11 +195,11 @@ img[alt="f"] {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #DC5B25;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #DC5B25;
 }
 
 input:checked + .slider:before {
@@ -212,4 +215,93 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+/* Свитч авторежима */
+
+
+/* Слайдер */
+#slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 300px;
+  height: 10px;
+  border-radius: 5px;
+  background: #ddd;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+#slider:hover {
+  opacity: 1;
+}
+
+#slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #8E2A15;
+  cursor: pointer;
+}
+
+#slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #8E2A15;
+  cursor: pointer;
+}
+
+#value {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  font-size: 18px;
+  color: #8E2A15;
+}
+/* Слайдер */
+
+.footer-gameplay {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 35px;
+  margin: 40px auto;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  color: #8E2A15
+
+}
+
+.btn-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 160px;
+  background: #FAFAFA;
+  border: 3px solid #8E2A15;
+  box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 60px 5px 5px 60px;
+  gap: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+
+}
+
+.btn-forward {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 160px;
+  background: #FAFAFA;
+  border: 3px solid #8E2A15;
+  box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px 60px 60px 5px;
+  gap: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+
 }
