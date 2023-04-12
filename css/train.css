@@ -17,13 +17,14 @@
     margin: 5px 5px 15px 5px;
 }
 
-.telo {
+.telo-train {
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
     max-height: 548px;
+    min-height: 548px;
     background: linear-gradient(135deg, #8E2A15 0%, #DC5B25 49.48%, #8E2A15 100%);
     box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
@@ -34,7 +35,7 @@
 
 }
 
-.telo::-webkit-scrollbar {
+.telo-train::-webkit-scrollbar {
     width: 0px;
     background-color: #F5F5F5;
 }

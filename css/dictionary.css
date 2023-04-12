@@ -1,0 +1,119 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Montserrat+Alternates:wght@200;400;700&family=Montserrat:wght@200;400;700&display=swap');
+
+.header-dict {
+    width: 100%;
+    background: #FAFAFA;
+    border: 3px solid #8E2A15;
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px 20px 5px 5px;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    padding: 5px 0 5px 0;
+    margin: 5px 5px 15px 5px;
+
+}
+
+.telo-dict {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-height: 548px;
+    min-height: 548px;
+    background: linear-gradient(135deg, #8E2A15 0%, #DC5B25 49.48%, #8E2A15 100%);
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 5px 0 5px 0;
+    margin: 5px 5px 15px 5px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.telo-dict::-webkit-scrollbar {
+    width: 0px;
+    background-color: #F5F5F5;
+}
+
+.chooseAll {
+    display: flex;
+    padding-left: 35%;
+    gap: 5px;
+    margin: 15px;
+}
+
+.chooseAll p {
+    color: #FAFAFA;
+    font-family: 'Montserrat';
+    font-size: 11px;
+}
+
+.card-word {
+    margin-bottom: 5px;
+    width: 90%;
+    background: #FAFAFA;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rus-word-string {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 8px 4px 8px;
+
+}
+
+.rus-word {
+    display: flex;
+    align-items: center;
+}
+
+
+.eng-word {
+    margin: 4px 8px 8px 8px;
+}
+
+.checkbox {
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+  }
+  
+  .checkbox input[type="checkbox"] {
+    opacity: 0;
+  }
+  
+  .checkbox__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+  }
+  
+  .checkbox__label::after {
+    content: '';
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 2px;
+    width: 4px;
+    height: 8px;
+    border: solid #8E2A15;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  .checkbox input[type="checkbox"]:checked + .checkbox__label::after {
+    display: block;
+  }
+  

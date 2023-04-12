@@ -264,6 +264,7 @@ input:checked + .slider:before {
 }
 /* Слайдер */
 
+/* Нижнее меню геймплея */
 .footer-gameplay {
   display: flex;
   justify-content: space-around;
@@ -305,3 +306,4 @@ input:checked + .slider:before {
   cursor: pointer;
 
 }
+/* Нижнее меню геймплея */

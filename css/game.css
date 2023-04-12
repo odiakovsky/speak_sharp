@@ -54,10 +54,10 @@ body {
 }
 
 .dictionary {
-    max-width: 200px;
+    max-width: 210px;
     width: 100%;
-    border: 3px solid #8E2A15;
-    height: 595px;
+    border: none;
+    scrollbar-width: 0px;
 
 }
 

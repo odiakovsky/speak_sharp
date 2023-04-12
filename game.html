@@ -7,9 +7,9 @@
 
     <link rel="stylesheet" href="./css/game.css">
     <link rel="stylesheet" href="./css/train.css">
+    <link rel="stylesheet" href="./css/dictionary.css">
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/gameplay.css">
-
 
 </head>
 
@@ -58,7 +58,7 @@
         <!-- Выбор тренировки. Стили прописаны в train.css -->
         <div id="train">
             <h3 class="header-train">ТРЕНИРОВКА</h3>
-            <div class="telo">
+            <div class="telo-train">
                 <div class="card selected">
                     <h4>Простое время <br><b>The simple tenses</b>
                     </h4>
@@ -188,10 +188,10 @@
                     <img src="img/forward.svg" alt="f">
 
                 </div>
-            <!-- Нижнее меню геймплея -->
+                <!-- Нижнее меню геймплея -->
 
 
-        </div>
+            </div>
 
 
 
@@ -199,8 +199,37 @@
 
         <!-- Геймплей -->
 
+        <!-- Словарь -->
+        <div class="dictionary">
+            <h3 class="header-dict">СЛОВАРЬ</h3>
+            <div class="telo-dict">
+                <div class="chooseAll">
+                    <p>Выбрать все</p>
+                    <label class="checkbox">
+                        <input type="checkbox" id="chooseAll" name="chooseAll" checked>
+                        <span class="checkbox__label"></span>
+                    </label>
+            </div>
 
-        <div class="dictionary"></div>
+                <div class="card-word">
+                    <div class="rus-word-string">
+                        <p class="rus-word">любить</p>
+                        <label class="checkbox">
+                            <input type="checkbox" id="chooseWord" name="chooseWord" checked>
+                            <span class="checkbox__label"></span>
+                        </label>
+                    </div>
+
+                    <p class="eng-word"><b>to love (loved)</b></p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <!-- Словарь -->
+
 
         <div class="ad2">
             <img src="img/adgirl.png" alt="ad2">
