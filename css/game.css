@@ -64,3 +64,88 @@ body {
 .ad2 {
 
 }
+
+hr {
+    width: 70%;
+    max-width: 1000px;
+    height: 1px;
+    background-color: black;
+    border: none;
+}
+
+
+.footer {
+    margin-top: 120px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer>* {
+    margin-bottom: 20px;
+}
+
+.socials {
+    margin-top: 40px;
+}
+
+.socials a:first-child {
+    margin-right: 50px;
+}
+
+.socials img {
+    background-image: url('button.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 60px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.2s;
+}
+
+.socials img:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.socials img:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
+
+.phone {
+    font-family: 'Montserrat Alternates';
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.email {
+    font-family: 'Montserrat Alternates';
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.shops img:first-child {
+    margin-right: 25px;
+}
+
+.shops img {
+    background-image: url('button.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 60px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.shops img:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.shops img:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}

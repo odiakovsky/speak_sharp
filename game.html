@@ -11,13 +11,34 @@
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/gameplay.css">
 
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(93211038, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/93211038" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
 </head>
 
 <body>
 
     <!-- Меню -->
     <div class="menu">
-        <h2 class="nav-item"><a href="#!" class="nav-link" onclick="scrollToElement()">Идея</a></h2>
+        <h2 class="nav-item"><a href="https://speaksharp.ru/" class="nav-link" onclick="scrollToElement()">Идея</a></h2>
         <h2 class="nav-item"><a href="#!" class="nav-link" onclick="scrollToBottom()">Контакты</a></h2>
 
         <div class="logo">
@@ -188,11 +209,8 @@
                     <img src="img/forward.svg" alt="f">
 
                 </div>
-                <!-- Нижнее меню геймплея -->
-
-
             </div>
-
+            <!-- Нижнее меню геймплея -->
 
 
         </div>
@@ -209,7 +227,7 @@
                         <input type="checkbox" id="chooseAll" name="chooseAll" checked>
                         <span class="checkbox__label"></span>
                     </label>
-            </div>
+                </div>
 
                 <div class="card-word">
                     <div class="rus-word-string">
@@ -236,6 +254,33 @@
         </div>
 
     </div>
+
+        <!-- Подвал -->
+        <div class="footer">
+            <hr>
+    
+            <div class="socials">
+                <a href="https://api.whatsapp.com/send?phone=79204998800" target="_blank"><img src="/img/whatsapp.svg"
+                        alt="whatsapp"></a>
+                <a href="https://t.me/Oleg_Dyakovskii" target="_blank"><img src="/img/telegram.svg" alt="telegram"></a>
+            </div>
+    
+            <div class="email">
+                <h2>speaksharp@yandex.ru</h2>
+            </div>
+    
+            <div class="phone">
+                <h2>+7 (920) 499-88-00</h2>
+            </div>
+    
+            <div class="shops">
+                <img src="/img/Apple.png" alt="apple">
+                <img src="/img/Google.svg" alt="google">
+            </div>
+        </div>
+        <!-- Подвал -->
+    
+    
 
     <script src="./js/train.js"></script>
     <script src="./js/main.js"></script>

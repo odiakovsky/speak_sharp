@@ -49,6 +49,7 @@
     column-gap: 10px;
     align-items: center;
     position: relative;
+    cursor: pointer;
 }
 
 .kaz {
@@ -59,6 +60,7 @@
     top: calc(100% + 5px);
     left: 0;
     z-index: 1;
+    cursor: pointer;
 }
 
 .language {
