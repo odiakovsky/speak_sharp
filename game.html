@@ -77,7 +77,7 @@
 
 
         <!-- Выбор тренировки. Стили прописаны в train.css -->
-        <div id="train">
+        <div id="train" class="train">
             <h3 class="header-train">ТРЕНИРОВКА</h3>
             <div class="telo-train">
                 <div class="card selected">
@@ -153,7 +153,7 @@
                 <p>Фраза:</p>
                 <p><b>Мы будем использовать</b></p>
                 <div class="sound">
-                    <img src="img/soundOn.svg" alt="soundOn">
+                    <img src="img/soundOff.svg" alt="soundOff">
                 </div>
             </div>
             <!-- Фраза -->
@@ -164,7 +164,7 @@
                 <p>Перевод:</p>
 
                 <div class="translation-phrase">
-                    <h2><b>Will we use?</b></h2>
+                    <h2><b>We will use</b></h2>
 
                     <div class="mute">
                         <canvas id="myCanvas"></canvas>
@@ -183,7 +183,7 @@
 
                 <p>Автоматический режим</p>
                 <div class="sound">
-                    <img src="img/soundOn.svg" alt="soundOn">
+                    <img src="img/soundOff.svg" alt="soundOff">
                 </div>
             </div>
             <!-- Меню автоматического режима -->
@@ -200,11 +200,11 @@
 
                 <div class="btn-home">
                     <img src="img/back.svg" alt="f">
-                    <p>ДОМОЙ</p>
-                    <img src="img/home.svg" alt="doc">
+                    <p>ТРЕНИРОВКА</p>
                 </div>
 
                 <div class="btn-forward">
+                    <img class="imgForward" src="img/forward.svg" alt="f">
                     <p>ВПЕРЕД</p>
                     <img src="img/forward.svg" alt="f">
 
@@ -255,32 +255,40 @@
 
     </div>
 
-        <!-- Подвал -->
-        <div class="footer">
-            <hr>
-    
-            <div class="socials">
-                <a href="https://api.whatsapp.com/send?phone=79204998800" target="_blank"><img src="/img/whatsapp.svg"
-                        alt="whatsapp"></a>
-                <a href="https://t.me/Oleg_Dyakovskii" target="_blank"><img src="/img/telegram.svg" alt="telegram"></a>
-            </div>
-    
-            <div class="email">
-                <h2>speaksharp@yandex.ru</h2>
-            </div>
-    
-            <div class="phone">
-                <h2>+7 (920) 499-88-00</h2>
-            </div>
-    
-            <div class="shops">
-                <img src="/img/Apple.png" alt="apple">
-                <img src="/img/Google.svg" alt="google">
-            </div>
+
+
+    <!-- Подвал -->
+    <div class="footer">
+
+        <div class="ad3">
+            <img src="img/adHor.png" alt="ad3">
         </div>
-        <!-- Подвал -->
-    
-    
+
+
+        <hr>
+
+        <div class="socials">
+            <a href="https://api.whatsapp.com/send?phone=79204998800" target="_blank"><img src="/img/whatsapp.svg"
+                    alt="whatsapp"></a>
+            <a href="https://t.me/Oleg_Dyakovskii" target="_blank"><img src="/img/telegram.svg" alt="telegram"></a>
+        </div>
+
+        <div class="email">
+            <h2>speaksharp@yandex.ru</h2>
+        </div>
+
+        <div class="phone">
+            <h2>+7 (920) 499-88-00</h2>
+        </div>
+
+        <div class="shops">
+            <img src="/img/Apple.png" alt="apple">
+            <img src="/img/Google.svg" alt="google">
+        </div>
+    </div>
+    <!-- Подвал -->
+
+
 
     <script src="./js/train.js"></script>
     <script src="./js/main.js"></script>

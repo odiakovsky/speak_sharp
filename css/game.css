@@ -46,7 +46,7 @@ body {
     flex-direction: column;
     max-width: 400px;
     width: 100%;
-    height: 66vh;
+    padding: 15px;
     background: #FAFAFA;
     border: 3px solid #E35A00;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -63,6 +63,10 @@ body {
 
 .ad2 {
 
+}
+
+.ad3 {
+    display: none;
 }
 
 hr {
@@ -148,4 +152,110 @@ hr {
 .shops img:active {
     transform: translateY(1px);
     box-shadow: none;
+}
+
+
+@media (max-width: 1024px) {
+
+    .main {
+        margin-top: 0px;
+    }
+
+
+    .ad1 {
+        display: none;
+    }
+    .ad2 {
+        display: none;
+    }
+    .ad3 {
+        display: flex;
+    }
+            
+    .footer {
+        margin-top: 10px;
+    }
+
+    hr {
+        margin-top: 50px;
+    }
+
+
+}
+
+@media (max-width: 740px) {
+
+    .train {
+        display: none;
+    }
+
+    .dictionary {
+        display: none;
+    }
+
+
+    .footer {
+        width: 100%;
+    }
+
+    .footer>* {
+        margin-bottom: 15px;
+        /* добавляем отступ между дочерними элементами */
+    }
+
+    .socials {
+        margin-top: 20px;
+    }
+
+    .socials a:first-child {
+        margin-right: 30px;
+    }
+
+    .socials img {
+        background-image: url('button.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 50px;
+        border-radius: 60px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+        transition: box-shadow 0.2s;
+    }
+
+
+
+    .phone {
+        font-family: 'Montserrat Alternates';
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .email {
+        font-family: 'Montserrat Alternates';
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .shops {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .shops img:first-child {
+        margin-right: 0px;
+    }
+
+
+    .shops img {
+        background-image: url('button.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 150px;
+        border-radius: 60px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        transition: box-shadow 0.2s;
+    }
+
 }
