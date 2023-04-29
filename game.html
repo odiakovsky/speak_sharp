@@ -10,16 +10,16 @@
     <link rel="stylesheet" href="./css/dictionary.css">
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/gameplay.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (m, e, t, r, i, k, a) {
             m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
             m[i].l = 1 * new Date();
             for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
-            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+                k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
         })
-            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
         ym(93211038, "init", {
             clickmap: true,
@@ -30,11 +30,75 @@
     <noscript>
         <div><img src="https://mc.yandex.ru/watch/93211038" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/papaparse@latest/papaparse.min.js"></script>
     <!-- /Yandex.Metrika counter -->
 
 </head>
 
 <body>
+
+    <div class="mobile_menu">
+        <div class="top_menu">
+
+            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <svg onclick="closeMenu()" fill="#000000" width="70px" height="70px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.8,16l5.5-5.5c0.8-0.8,0.8-2,0-2.8l0,0C24,7.3,23.5,7,23,7c-0.5,0-1,0.2-1.4,0.6L16,13.2l-5.5-5.5  c-0.8-0.8-2.1-0.8-2.8,0C7.3,8,7,8.5,7,9.1s0.2,1,0.6,1.4l5.5,5.5l-5.5,5.5C7.3,21.9,7,22.4,7,23c0,0.5,0.2,1,0.6,1.4  C8,24.8,8.5,25,9,25c0.5,0,1-0.2,1.4-0.6l5.5-5.5l5.5,5.5c0.8,0.8,2.1,0.8,2.8,0c0.8-0.8,0.8-2.1,0-2.8L18.8,16z"/>
+            </svg>
+        </div>
+        <div class="content_menu">
+            <div><a href="index.html">На главную</a></div>
+            <div><a href="#!" onclick="scrollToElement();closeMenu()">Идея</a></div>
+            <div><a href="#!" onclick="scrollToBottom();closeMenu()">Контакты</a></div>
+        </div>
+    </div>
+
+    <style type="text/css">
+        .mobile_menu{
+            position: fixed;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #f1f1f1;
+            z-index: 10;
+            transition: .3s;
+            transform: translateX(100%);
+            padding: 25px;
+            text-align: right;
+        }
+
+        .mobile_menu.open{
+            transform: translateX(0px);
+        }
+
+        .content_menu{
+            font-family: 'Montserrat Alternates';
+            font-size: 34px;
+            font-weight: 500;
+            color: black;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .content_menu div{
+            margin-top: 15px;
+        }
+
+        .content_menu div a{
+            color: black;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function  openMenu() {
+            $('.mobile_menu').addClass('open')
+        }
+
+        function closeMenu() {
+            $('.mobile_menu').removeClass('open')
+        }
+    </script>
 
     <!-- Меню -->
     <div class="menu">
@@ -43,7 +107,7 @@
 
         <div class="logo">
             <picture>
-                <img src="/img/parrot50.svg" class='logo-img' alt="SpeakSharp" href="https://speaksharp.ru/">
+                <img src="./img/parrot50.svg" class='logo-img' alt="SpeakSharp" href="https://speaksharp.ru/">
             </picture>
             <h1 class="logo-name"><a href="https://speaksharp.ru/" class="nav-link">SPEAK SHARP</a></h1>
 
@@ -52,17 +116,17 @@
         <div class="language">
             <div class="rus" onmouseover="showKaz();" onmouseout="hideKaz();">
                 <h2 class="nav-item"><a href="#!" class="nav-link">РУС</a></h2>
-                <img src="/img/russia40.svg" class="flag" id="flag-rus" alt="language" href="#!">
+                <img src="./img/russia40.svg" class="flag" id="flag-rus" alt="language" href="#!">
             </div>
 
             <div class="kaz" id="kaz">
                 <h2 class="nav-item"><a href="#!" class="nav-link">ҚАЗ</a></h2>
-                <img src="/img/kaz.png" class="flag" alt="language" href="#!">
+                <img src="./img/kaz.png" class="flag" alt="language" href="#!">
             </div>
         </div>
 
-        <img src="/img/Login.svg" class="nav-item" alt="login" href="#!">
-        <img src="/img/burger.svg" class="burger" alt="burger" href="#!">
+        <img src="./img/Login.svg" class="nav-item" alt="login" href="#!">
+        <img src="./img/burger.svg" class="burger" alt="burger"  onclick="openMenu()" href="#!">
     </div>
     <!-- Меню -->
 
@@ -80,37 +144,37 @@
         <div id="train" class="train">
             <h3 class="header-train">ТРЕНИРОВКА</h3>
             <div class="telo-train">
-                <div class="card selected">
+                <div onclick="loadFile('simple_tenses_practice')" class="card selected">
                     <h4>Простое время <br><b>The simple tenses</b>
                     </h4>
                     <h5>1 уровень</h5>
-                    <img src="/img/book.svg" class="book" alt="book">
+                    <img src="./img/book.svg" class="book" alt="book">
                 </div>
-                <div class="card">
+                <div onclick="loadFile('simple_tenses_practice_second_level')" class="card">
                     <h4>Простое время <br><b>The simple tenses</b></h4>
                     <h5>2 уровень
                     </h5>
-                    <img src="/img/book.svg" class="book" alt="book">
+                    <img src="./img/book.svg" class="book" alt="book">
                 </div>
-                <div class="card">
+                <div onclick="loadFile('to_be_practice')" class="card">
                     <h4>Глагол <b>to be</b> <br>(быть, находиться)</b></h4>
-                    <img src="/img/book.svg" class="book" alt="book">
+                    <img src="./img/book.svg" class="book" alt="book">
                 </div>
                 <div class="card notactive">
                     <h4>Продолженное время <br><b>Continuous Tenses</b></h4>
-                    <img src="/img/book.svg" class="book" alt="book">
+                    <img src="./img/book.svg" class="book" alt="book">
                 </div>
                 <div class="card notactive">
                     <h4>Совершенное время <br><b>The Perfect Tenses</b></h4>
-                    <img src="/img/book.svg" class="book" alt="book">
+                    <img src="./img/book.svg" class="book" alt="book">
                 </div>
                 <div class="card notactive">
                     <h4>Совершенное время <br><b>The Perfect Tenses</b></h4>
-                    <img src="/img/book.svg" class="book" alt="book">
+                    <img src="./img/book.svg" class="book" alt="book">
                 </div>
                 <div class="card notactive">
                     <h4>Совершенное время <br><b>The Perfect Tenses</b></h4>
-                    <img src="/img/book.svg" class="book" alt="book">
+                    <img src="./img/book.svg" class="book" alt="book">
                 </div>
             </div>
         </div>
@@ -141,7 +205,7 @@
             <!-- Верхнее меню геймплея -->
 
             <!-- Показать глагол -->
-            <div class="showverb">
+            <div class="showverb" onclick="showVerb()">
                 <img src="img/magnifier.svg" alt="magnifier">
                 <p>Показать глагол</p>
                 <img src="img/forward.svg" alt="f">
@@ -151,7 +215,7 @@
             <!-- Фраза -->
             <div class="phrase">
                 <p>Фраза:</p>
-                <p><b>Мы будем использовать</b></p>
+                <p><b></b></p>
                 <div class="sound">
                     <img src="img/soundOff.svg" alt="soundOff">
                 </div>
@@ -164,7 +228,7 @@
                 <p>Перевод:</p>
 
                 <div class="translation-phrase">
-                    <h2><b>We will use</b></h2>
+                    <h2><b></b></h2>
 
                     <div class="mute">
                         <canvas id="myCanvas"></canvas>
@@ -172,12 +236,41 @@
                 </div>
             </div>
             <!-- Скрытый перевод -->
+            <script type="text/javascript">
+                let timerId;
 
+                function checkboxChange(that){
+                    if($(that).is(":checked")){
+                        clickButton()
+                    }else{
+                        clearTimeout(timerId)
+                    }
+                }
+
+                function clickButton(){
+                    time = ($('#slider').val() - 1) * 1000
+
+                    timerId = setTimeout(function tick() {
+                      time = ($('#slider').val() - 1) * 1000
+                      
+
+                      $('.translation-phrase h2').show()
+                      $('.translation-phrase .mute').hide()
+
+                      setTimeout(function() {
+                        $('.btn-forward').click()
+                        
+                        timerId = setTimeout(tick, time);
+                      }, 1000);
+
+                  }, time);
+                }
+            </script>
             <!-- Меню автоматического режима -->
             <div class="automenu">
 
                 <label class="switch">
-                    <input type="checkbox">
+                    <input onchange="checkboxChange(this)" type="checkbox">
                     <span class="slider round"></span>
                 </label>
 
@@ -190,7 +283,7 @@
 
             <!-- Слайдер -->
             <div>
-                <input type="range" id="slider" min="5" max="30" step="5">
+                <input  type="range" id="slider" min="5" max="30" step="5" value="10">
                 <span id="value"></span>
             </div>
             <!-- Слайдер -->
@@ -203,7 +296,7 @@
                     <p>ТРЕНИРОВКА</p>
                 </div>
 
-                <div class="btn-forward">
+                <div class="btn-forward" onclick="next()">
                     <img class="imgForward" src="img/forward.svg" alt="f">
                     <p>ВПЕРЕД</p>
                     <img src="img/forward.svg" alt="f">
@@ -224,23 +317,11 @@
                 <div class="chooseAll">
                     <p>Выбрать все</p>
                     <label class="checkbox">
-                        <input type="checkbox" id="chooseAll" name="chooseAll" checked>
+                        <input type="checkbox" id="chooseAll" onchange="chooseAll()" name="chooseAll" checked>
                         <span class="checkbox__label"></span>
                     </label>
                 </div>
 
-                <div class="card-word">
-                    <div class="rus-word-string">
-                        <p class="rus-word">любить</p>
-                        <label class="checkbox">
-                            <input type="checkbox" id="chooseWord" name="chooseWord" checked>
-                            <span class="checkbox__label"></span>
-                        </label>
-                    </div>
-
-                    <p class="eng-word"><b>to love (loved)</b></p>
-
-                </div>
 
 
             </div>
@@ -268,31 +349,202 @@
         <hr>
 
         <div class="socials">
-            <a href="https://api.whatsapp.com/send?phone=79204998800" target="_blank"><img src="/img/whatsapp.svg"
-                    alt="whatsapp"></a>
-            <a href="https://t.me/Oleg_Dyakovskii" target="_blank"><img src="/img/telegram.svg" alt="telegram"></a>
+            <a href="https://api.whatsapp.com/send?phone=79204998800" target="_blank"><img src="./img/whatsapp.svg"
+                alt="whatsapp"></a>
+                <a href="https://t.me/Oleg_Dyakovskii" target="_blank"><img src="./img/telegram.svg" alt="telegram"></a>
+            </div>
+
+            <div class="email">
+                <h2>speaksharp@yandex.ru</h2>
+            </div>
+
+            <div class="phone">
+                <h2>+7 (920) 499-88-00</h2>
+            </div>
+
+            <div class="shops">
+                <img src="./img/Apple.png" alt="apple">
+                <img src="./img/Google.svg" alt="google">
+            </div>
         </div>
-
-        <div class="email">
-            <h2>speaksharp@yandex.ru</h2>
-        </div>
-
-        <div class="phone">
-            <h2>+7 (920) 499-88-00</h2>
-        </div>
-
-        <div class="shops">
-            <img src="/img/Apple.png" alt="apple">
-            <img src="/img/Google.svg" alt="google">
-        </div>
-    </div>
-    <!-- Подвал -->
+        <!-- Подвал -->
 
 
 
-    <script src="./js/train.js"></script>
-    <script src="./js/main.js"></script>
+        <script src="./js/train.js"></script>
+        <script src="./js/main.js"></script>
 
-</body>
+        <script type="text/javascript">
+            var datas = []
+            var datas_2 = []
+            var datasText = []
 
-</html>
+            var selectIds = []
+            var countId = 0
+            var selectId = 0
+            var selectIds_2 = []
+
+            var lastPhrase = ''
+
+            function showVerb(){
+                // $('.card-word').remove()
+                // $('.telo-dict').append('<div class="card-word">\
+                //     <div class="rus-word-string">\
+                //     <p class="rus-word">'+datas_2[selectId][2]+'</p>\
+                //     <label class="checkbox">\
+                //     <input type="checkbox" id="chooseWord" name="chooseWord" checked="">\
+                //     <span class="checkbox__label"></span>\
+                //     </label>\
+                //     </div>\
+                //     \
+                //     <p class="eng-word"><b>'+datas_2[selectId][3]+'</b></p>\
+                //     \
+                //     </div>')
+
+                $('.showverb p').html('<p class="rus-word">'+datas_2[selectId][2]+'</p><p class="eng-word"><b>'+datas_2[selectId][3]+'</b></p>')
+            }
+
+            function loadFile(file){
+                lastPhrase = ''
+                datas = []
+                datas_2 = []
+                datasText = []
+                selectIds = []
+                selectIds_2 = []
+                countId = 0
+                selectId = 0
+
+                $('.card-word').remove()
+                $('.translation-phrase h2').hide()
+                $('.translation-phrase .mute').show()
+
+                $('#chooseAll').prop('checked', true)
+
+                Papa.parse("csv/"+file+".csv", {
+                    download: true,
+                    step: function(row) {
+                        if(row.data[3] === undefined){
+                            return
+                        }else{
+                            selectIds.push(countId)
+                            selectIds_2.push(countId)
+                            countId += 1
+                            if(datasText.indexOf(row.data[2]) === -1){
+                                datas.push(row.data)
+                                datasText.push(row.data[2])
+                            }
+
+                            datas_2.push(row.data)
+                        }
+
+
+                    },
+                    complete: function() {
+
+
+                        showElements()
+                        selectId = Math.floor(Math.random()*datas_2.length)
+                        var item = datas_2[selectId];
+                        $('.phrase b').html(item[0])
+                        $('.translation b').html(item[1])
+                        lastPhrase = item[0]
+                    }
+                });
+            }
+
+            loadFile('simple_tenses_practice')
+
+
+
+
+            function showElements(){
+                datas.forEach(function(item, index, array) {
+                    ch = ''
+
+                    if(selectIds.indexOf(index) !== -1){
+                        ch = 'checked=""'
+                    }
+                    $('.telo-dict').append('<div class="card-word">\
+                        <div class="rus-word-string">\
+                        <p class="rus-word">'+item[2]+'</p>\
+                        <label class="checkbox">\
+                        <input onchange="changeSelect('+index+', this)" type="checkbox" id="chooseWord" class="chooseWord" name="chooseWord" '+ch+'>\
+                        <span class="checkbox__label"></span>\
+                        </label>\
+                        </div>\
+                        \
+                        <p class="eng-word"><b>'+item[3]+'</b></p>\
+                        \
+                        </div>')
+                });
+            }
+
+            function next(){
+                $('.showverb p').html('Показать глагол')
+                // $('.card-word').remove();
+                // showElements()
+                if(selectIds.length > 1){
+                    while(true){
+                        selectId = selectIds[Math.floor(Math.random()*selectIds.length)]
+                        var item = datas_2[selectId];
+                        $('.phrase b').html(item[0])
+                        $('.translation b').html(item[1])
+                        $('.translation-phrase h2').hide()
+                        $('.translation-phrase .mute').show()
+
+                        if(lastPhrase != item[0]){
+                            lastPhrase = item[0]
+                            break;
+                        }
+                    }
+                }else{
+                    selectId = selectIds[Math.floor(Math.random()*selectIds.length)]
+                    var item = datas_2[selectId];
+                    $('.phrase b').html(item[0])
+                    $('.translation b').html(item[1])
+                    $('.translation-phrase h2').hide()
+                    $('.translation-phrase .mute').show()
+                    lastPhrase = item[0]
+                }
+            }
+
+            function changeSelect(index, that){
+                if(selectIds.includes(index)){
+                    $('#chooseAll').prop('checked', false)
+
+                    var myIndex = selectIds.indexOf(index);
+                    if (myIndex !== -1) {
+                        selectIds.splice(myIndex, 1);
+                    }
+                }else{
+
+                    selectIds.push(index)
+                    if(selectIds_2.length == selectIds.length){
+                        $('#chooseAll').prop('checked', true)
+                    }
+                }
+            }
+
+            function chooseAll(){
+                if($('#chooseAll').is(':checked')){
+                    $('.chooseWord').prop('checked', true)
+                    selectIds = selectIds_2
+                }else{
+                    $('.chooseWord').prop('checked', false)
+                    selectIds = []
+                }
+            }
+
+
+
+        </script>
+
+        <style type="text/css">
+            .showverb .eng-word{
+                margin-left: 0px!important;
+            }
+        </style>
+
+    </body>
+
+    </html>
